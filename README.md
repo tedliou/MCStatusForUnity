@@ -10,13 +10,13 @@ Before installing `MCStatusForUnity`, you need to install its dependencies using
 
 ### Dependencies
 
-1.  **C-Sharp-Promise**:
+1.  **C-Sharp-Promise-UPM**:
 
       * Open Unity.
       * Go to `Window > Package Manager`.
       * Click the `+` icon in the top-left corner.
       * Select `Add package from git URL...`.
-      * Enter the URL: `https://github.com/Real-Serious-Games/C-Sharp-Promise.git`
+      * Enter the URL: `https://github.com/RoryDungan/C-Sharp-Promise-UPM.git`
       * Click `Add`.
 
 2.  **RestClient**:
