@@ -18,10 +18,20 @@ namespace VerveCode
             if (typeof(T) == typeof(MCStatusJava))
             {
                 path = PATH_JAVA;
+
+                if (port == 0)
+                {
+                    port = 25565;
+                }
             }
             else if (typeof(T) == typeof(MCStatusBedrock))
             {
                 path = PATH_BEDROCK;
+
+                if (port == 0)
+                {
+                    port = 19132;
+                }
             }
 
             RestClient.Get($"{BASE_URL}{QUREY_STATUS}{path}/{address}:{port}").Then(response =>
@@ -31,6 +41,7 @@ namespace VerveCode
             }).Catch(error =>
             {
                 Debug.LogError(error);
+                callback.Invoke(null);
             });
         }
     }  
