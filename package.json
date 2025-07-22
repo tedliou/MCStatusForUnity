@@ -1,0 +1,17 @@
+{
+    "name": "dev.vervecode.mcstatus",
+    "version": "1.0.0",
+    "displayName": "MCStatus For Unity",
+    "description": "",
+    "unity": "2021.3",
+    "keywords": ["Minecraft"],
+    "author": {
+        "name": "Ted Liou",
+        "email": "mail@tedliou.com",
+        "url": "https://vervecode.dev/"
+    },
+    "dependencies": {
+        "com.proyecto26.restclient": "2.6.2",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+    }
+}
